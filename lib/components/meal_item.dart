@@ -15,13 +15,15 @@ class MealItem extends StatelessWidget {
       AppRoutes.MEAL_DETAIL,
       arguments: meal,
     )
-        .then((value) {
-      if (value != null) {
-        print('O nome da refeição é: $value');
-      } else {
-        print('Sem retorno');
-      }
-    });
+        .then(
+      (value) {
+        if (value != null) {
+          print('O nome da refeição é: $value');
+        } else {
+          print('Sem retorno');
+        }
+      },
+    );
   }
 
   @override
